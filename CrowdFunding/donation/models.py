@@ -1,6 +1,6 @@
 from django.db import models
-from  users import Users
-from  projects import Projects
+from users import  models.Users
+from  projects import models.Projects
 # Create your models here.
 class Donation(models.Model):
     id = models.AutoField(primary_key=True)
