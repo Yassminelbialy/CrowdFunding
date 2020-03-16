@@ -12,11 +12,12 @@ class Projects(models.Model):
     end_date= models.DateField(auto_now=False, auto_now_add=False)
     average_rate=models.DecimalField(max_digits=5, decimal_places=5,null=True)
     max_target=models.BigIntegerField()
+    cover=models.ImageField(null=True)
+    choosen_byAdmin=models.BooleanField(default=False)
     ##FK
     user_id=models.ForeignKey('Authentication.Users', on_delete = models.CASCADE,null=True)
-    image_id=models.ForeignKey('Images', on_delete = models.CASCADE,null=True)
     category_id=models.ForeignKey('Category', on_delete = models.CASCADE,null=True)
-    tags_id=models.ForeignKey('Tags', on_delete = models.CASCADE,null=True)
+
     def __str__(self):
             return self.project_name
 
@@ -24,7 +25,6 @@ class Images(models.Model):
     id = models.AutoField(primary_key=True)
     image = models.ImageField(null=True)
     ## FK
-    user_id=models.ForeignKey('Authentication.Users', on_delete = models.CASCADE,null=True)
     project_Id=models.ForeignKey('Projects', on_delete = models.CASCADE,null=True)
     def __str__(self):
             return self.id
