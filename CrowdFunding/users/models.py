@@ -6,9 +6,9 @@ class Users(models.Model):
     First_name=models.CharField(max_length=100)
     Last_name=models.CharField(max_length=100)
     password=models.BigIntegerField()
-    image = models.ImageField(null=True)
+    image = models.ImageField()
     email = models.EmailField(max_length=254)
-    active=models.BooleanField(defualt=False)
+    active=models.BooleanField()
     phone=models.BigIntegerField()
     def __str__(self):
         return self.First_name
