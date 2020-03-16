@@ -1,5 +1,5 @@
 from django.db import models
-from users.models import Users
+# from users import models
 
 # # Create your models here.
 class Projects(models.Model):
@@ -7,13 +7,13 @@ class Projects(models.Model):
     project_name=models.CharField(max_length=100)
     title=models.CharField(max_length=100)
     details=models.TextField()
-    start_date= models.DateField(auto_now=False, auto_now_add=False)
-    end_date= models.DateField(auto_now=False, auto_now_add=False)
+    start_date= models.DateField(null=True )
+    end_date= models.DateField(null=True)
     average_rate=models.DecimalField(max_digits=5, decimal_places=5,null=True)
     max_target=models.BigIntegerField()
     ##FK
-    # user_id=models.ForeignKey('Users', on_delete = models.CASCADE)
-    # image_id=models.ForeignKey('Images', on_delete = models.CASCADE)
+    # user_id=models.ForeignKey('models.Users', on_delete = models.CASCADE)
+    image_id=models.ForeignKey('Images', on_delete = models.CASCADE)
     # category_id=models.ForeignKey('Category', on_delete = models.CASCADE)
     # tags_id=models.ForeignKey('Tags', on_delete = models.CASCADE)
     def __str__(self):
