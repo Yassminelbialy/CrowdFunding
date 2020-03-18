@@ -10,11 +10,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CrowdFunding/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="84" selection-start-line="84" selection-end-line="84" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Profile/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="7" column="15" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="15" />
+            <state relative-caret-position="102">
+              <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Authentication/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Make_Donation/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -25,7 +55,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Profile/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
+            <state relative-caret-position="34">
               <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
@@ -34,11 +64,22 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Project_Creation/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+            <state relative-caret-position="238">
+              <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Home_Page/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -57,17 +98,17 @@
         <option value="$PROJECT_DIR$/users/models.py" />
         <option value="$PROJECT_DIR$/donation/models.py" />
         <option value="$PROJECT_DIR$/projects/models.py" />
-        <option value="$PROJECT_DIR$/CrowdFunding/settings.py" />
         <option value="$PROJECT_DIR$/Authentication/models.py" />
-        <option value="$PROJECT_DIR$/Make_Donation/models.py" />
-        <option value="$PROJECT_DIR$/Home_Page/models.py" />
-        <option value="$PROJECT_DIR$/Profile/models.py" />
-        <option value="$PROJECT_DIR$/Project_Creation/models.py" />
         <option value="$PROJECT_DIR$/Make_Donation/admin.py" />
         <option value="$PROJECT_DIR$/Authentication/admin.py" />
         <option value="$PROJECT_DIR$/Home_Page/admin.py" />
         <option value="$PROJECT_DIR$/Project_Creation/admin.py" />
         <option value="$PROJECT_DIR$/Profile/admin.py" />
+        <option value="$PROJECT_DIR$/Project_Creation/models.py" />
+        <option value="$PROJECT_DIR$/Profile/models.py" />
+        <option value="$PROJECT_DIR$/Make_Donation/models.py" />
+        <option value="$PROJECT_DIR$/Home_Page/models.py" />
+        <option value="$PROJECT_DIR$/CrowdFunding/settings.py" />
       </list>
     </option>
   </component>
@@ -83,7 +124,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -94,7 +134,17 @@
             <path>
               <item name="CrowdFunding" type="b2602c69:ProjectViewProjectNode" />
               <item name="CrowdFunding" type="462c0819:PsiDirectoryNode" />
-              <item name="Profile" type="462c0819:PsiDirectoryNode" />
+              <item name="Authentication" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CrowdFunding" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CrowdFunding" type="462c0819:PsiDirectoryNode" />
+              <item name="CrowdFunding" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CrowdFunding" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CrowdFunding" type="462c0819:PsiDirectoryNode" />
+              <item name="Home_Page" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CrowdFunding" type="b2602c69:ProjectViewProjectNode" />
@@ -105,6 +155,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -138,8 +189,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24330357" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -196,31 +246,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CrowdFunding/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="43" column="20" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Authentication/migrations/0001_initial.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Authentication/migrations/0002_auto_20200316_1452.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Authentication/migrations/0002_auto_20200316_1452.py" />
     <entry file="file://$PROJECT_DIR$/Authentication/migrations/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Make_Donation/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="9" lean-forward="true" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Make_Donation/admin.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -242,29 +273,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Authentication/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="11" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Home_Page/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="6" lean-forward="true" selection-end-line="6" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Home_Page/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -279,10 +293,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/CrowdFunding/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="84" selection-start-line="84" selection-end-line="84" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Profile/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="15" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="15" />
+        <state relative-caret-position="102">
+          <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Authentication/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Make_Donation/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
@@ -291,7 +329,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Profile/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
+        <state relative-caret-position="34">
           <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
@@ -301,8 +339,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Project_Creation/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+        <state relative-caret-position="238">
+          <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Home_Page/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>

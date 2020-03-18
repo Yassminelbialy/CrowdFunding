@@ -11,7 +11,7 @@ class ExtraInfo (models.Model):
     Birth_day=models.DateField(auto_now=False, auto_now_add=False,null=True)
     FB_link=models.CharField(max_length=255,null=True)
     ##FK
-    User_id=models.ForeignKey('Authentication.Users', on_delete = models.CASCADE,null=True)
+    User_id=models.ForeignKey(Users, on_delete = models.CASCADE,null=True)
     def __str__(self):
         return self.id
 
