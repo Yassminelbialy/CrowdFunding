@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
 	{%load static%}
+	
     <title>Vegefoods - Free Bootstrap 4 Template by Colorlib</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -91,51 +92,56 @@
     				<div class="cart-list">
 	    				<table class="table">
 						    <thead class="thead-primary">
-						      <!-- <tr class="text-center">
+						      <tr class="text-center">
+								  <th>PERSONAL INFORMATION</th>
 						        <th>&nbsp;</th>
 						        <th>&nbsp;</th>
-						        <th>Product name</th>
-						        <th>Price</th>
+						        
+						        <!-- <th>Price</th>
 						        <th>Quantity</th>
-						        <th>Total</th>
-						      </tr> -->
+						        <th>Total</th> -->
+						      </tr>
 						    </thead>
 						    <tbody>
 						      <tr class="text-center">
 						        <td class="product-name">
 						        	<h3>First Name</h3>
 						        </td>
-						        <td class="price">{{data.First_name}}</td>
-								<td class="product-remove"><a href="#"><span class="icon-pencil"></span></a></td>
+						        <td class="price">
+								  	{%csrf_token%}
+									<h6 value="First_name">{{data.First_name}}</h6>
+								</td>
+								<td class="product-remove" id="td"><a href="#" id="firstnameedit">Edit</a></td>
 							  </tr><!-- END TR-->
 							  <tr class="text-center">
 						        <td class="product-name">
 						        	<h3>Last Name</h3>
 						        </td>
-						        <td class="price">{{data.Last_name}}</td>
-								<td class="product-remove"><a href="#"><span class="icon-pencil"></span></a></td>
+						        <td class="price"  ><h6 value="Last_name" >{{data.Last_name}}</h6></td>
+								<td class="product-remove"><a href="#" id="firstnameedit">Edit</a></td>
 							  </tr><!-- END TR-->
 							  <tr class="text-center">
 						        <td class="product-name">
 						        	<h3>Email</h3>
 						        </td>
-						        <td class="price">{{data.email}}</td>
-								<td class="product-remove"><a href="#"><span class="icon-pencil"></span></a></td>
+						        <td class="price"  ><h6 value="email">{{data.email}}</h6></td>
+								<td class="product-remove" ><a href="#" id="firstnameedit">Edit</a></td>
 							  </tr><!-- END TR-->
 							  <tr class="text-center">
 						        <td class="product-name">
 						        	<h3>Phone Number</h3>
 						        </td>
-						        <td class="price">{{data.phone}}</td>
-								<td class="product-remove"><a href="#"><span class="icon-pencil"></span></a></td>
+						        <td class="price"><h6 value="phone">{{data.phone}}</h6></td>
+								<td class="product-remove"><a href="#" id="firstnameedit">Edit</a></td>
 							  </tr><!-- END TR-->
-							  <tr class="text-center">
+							  <tr class="text-center" >
 						        <td class="product-name">
 						        	<h3>Password</h3>
 						        </td>
-						        <td class="price"><h3>..........</h3></td>
-								<td class="product-remove"><a href="#"><span class="icon-pencil"></span></a></td>
-						      </tr><!-- END TR-->
+						        <td class="price"><h6 value="password">..........</h6></td>
+								<td class="product-remove"><a href="#" id="firstnameedit">Edit</a></td>
+							  </tr><!-- END TR-->
+							  
 						    </tbody>
 						  </table>
 					  </div>
@@ -143,7 +149,7 @@
     		</div>
     		<div class="row justify-content-end">
     			<div class="col-lg-4 mt-5 cart-wrap ftco-animate">
-    				<div class="cart-total mb-3">
+					<div class="cart-total mb-3">
     					<h3>Coupon Code</h3>
     					<p>Enter your coupon code if you have one</p>
   						<form action="#" class="info">
@@ -300,7 +306,7 @@
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
-
+  	 
   <script src="{%static 'js/jquery.min.js'%}"></script>
   <script src="{%static 'js/jquery-migrate-3.0.1.min.js'%}"></script>
   <script src="{%static 'js/popper.min.js'%}"></script>
@@ -317,6 +323,46 @@
   <script src="{%static 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false'%}"></script>
   <script src="{%static 'js/google-map.js"></script>
   <script src="{%static 'js/main.js'%}"></script>
+  <script src="{%static 'js/profile.js'%}"></script>
+  
+  <script>   
+	function profileDataEdit(target,newValue,propertyName) {
+		$.ajax({
+			url: "/user/profile/edit",
+			type: "post",
+			data:{
+				csrfmiddlewaretoken:$('input[name=csrfmiddlewaretoken]').val(),
+				id:'{{data.user_id}}',
+				propertyName:propertyName,
+				newValue:newValue
+			},
+			success: function (result) {
+				console.log(result);
+				target.innerText="Edit";
+				newValue=$(target).closest('td').prev('td').children("input")[0].value;
+				$(target).closest('td').prev('td')[0].innerHTML="<h6 id='firstname'></h6>";
+				$(target).closest('td').prev('td').children("h6")[0].innerText=newValue;	
+
+			},
+			error: function (error) { console.log(error) }
+    	});
+	}
+
+	document.addEventListener('click', function(event){
+		if(event.target.innerText=="Save"){
+			newValue=$(event.target).closest('td').prev('td').children("input")[0].value;
+			profileDataEdit(event.target,newValue,propertyName);
+		}else if(event.target.innerText=="Edit"){
+			var oldValue=$(event.target).closest('td').prev('td').children("h6")[0].innerHTML;
+			propertyName=$(event.target).closest('td').prev('td').children("h6").attr("value");
+			console.log(propertyName);
+			$(event.target).closest('td').prev('td')[0].innerHTML="<input type='Text' required>"
+			$(event.target).closest('td').prev('td').children("input")[0].value=oldValue;
+			event.target.innerText="Save";
+		}
+	})
+  </script> 
+
 
   <script>
 		$(document).ready(function(){
