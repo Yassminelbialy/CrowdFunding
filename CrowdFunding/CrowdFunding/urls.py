@@ -20,5 +20,6 @@ from Profile import views as profile_views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('user/profile/<int:id>',profile_views.profile),
-    path('user/profile/edit',profile_views.edit_profile)
+    path('user/profile/edit',profile_views.edit_profile),
+    path('user/addExtrainformation/<int:id>', profile_views.add_info)
 ]

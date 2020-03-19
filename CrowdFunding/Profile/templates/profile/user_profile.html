@@ -96,10 +96,6 @@
 								  <th>PERSONAL INFORMATION</th>
 						        <th>&nbsp;</th>
 						        <th>&nbsp;</th>
-						        
-						        <!-- <th>Price</th>
-						        <th>Quantity</th>
-						        <th>Total</th> -->
 						      </tr>
 						    </thead>
 						    <tbody>
@@ -146,69 +142,153 @@
 						  </table>
 					  </div>
     			</div>
-    		</div>
-    		<div class="row justify-content-end">
-    			<div class="col-lg-4 mt-5 cart-wrap ftco-animate">
+			</div>
+			{% if  not extra_info.0.country%}
+			<div class="col-lg-4 mt-5 cart-wrap ftco-animate">
+    				<div>
+    					<h3>Extra Information</h3>
+    				</div>
+			</div>
+			<div class="col-lg-4 mt-5 cart-wrap ftco-animate">
 					<div class="cart-total mb-3">
-    					<h3>Coupon Code</h3>
-    					<p>Enter your coupon code if you have one</p>
-  						<form action="#" class="info">
-	              <div class="form-group">
-	              	<label for="">Coupon code</label>
-	                <input type="text" class="form-control text-left px-3" placeholder="">
-	              </div>
-	            </form>
+						<h3>Add Extra Informaion</h3>
+						<form action="/user/addExtrainformation/{{data.user_id}}" method="POST" class="info">{%csrf_token%}
+							<div class="form-group">
+								<label for="">Country</label>
+								<input type="Text" class="form-control text-left px-3" name="country" required>
+							</div>
+							<div class="form-group">
+								<label for="country">Facebook Link</label>
+								<input type="url" class="form-control text-left px-3" name="facebook" required>
+							</div>
+							<div class="form-group">
+								<label for="country">Birthdate</label>
+								<input type="date" class="form-control text-left px-3" name="birthdate" required>
+							</div>
+							<div class="form-group">
+								<button type="submit" class="btn btn-primary py-3 px-4"  placeholder="">Submit</button>
+							</div>
+						</form>
     				</div>
-    				<p><a href="checkout.html" class="btn btn-primary py-3 px-4">Apply Coupon</a></p>
+			</div>
+			{%endif%}
+			{% if  extra_info.0.country%}
+			<div class="container">
+				<div class="row">
+    			<div class="col-md-12 ftco-animate">
+    				<div class="cart-list">
+	    				<table class="table">
+						    <thead class="thead-primary">
+						      <tr class="text-center">
+								  <!-- <th>PERSONAL INFORMATION</th>
+						        <th>&nbsp;</th>
+						        <th>&nbsp;</th> -->
+						      </tr>
+						    </thead>
+						    <tbody>
+						      <tr class="text-center">
+						        <td class="product-name">
+						        	<h3>Country</h3>
+						        </td>
+						        <td class="price">
+									<h6 value="country">{{extra_info.0.country}}</h6>
+								</td>
+								<td class="product-remove" id="td"><a href="#" id="firstnameedit">Edit</a></td>
+							  </tr><!-- END TR-->
+							  <tr class="text-center">
+						        <td class="product-name">
+						        	<h3>FaceBook</h3>
+						        </td>
+						        <td class="price"  ><h6 value="FB_link" >{{extra_info.0.FB_link}}</h6></td>
+								<td class="product-remove"><a href="#" id="firstnameedit">Edit</a></td>
+							  </tr><!-- END TR-->
+							  <tr class="text-center">
+						        <td class="product-name">
+						        	<h3>BirthDate</h3>
+						        </td>
+						        <td class="price"  ><h6 value="Birth_day">{{extra_info.0.Birth_day}}</h6></td>
+								<td class="product-remove" ><a href="#" id="firstnameedit">Edit</a></td>
+							  </tr><!-- END TR--> 
+						    </tbody>
+						  </table>
+					  </div>
     			</div>
-    			<div class="col-lg-4 mt-5 cart-wrap ftco-animate">
-    				<div class="cart-total mb-3">
-    					<h3>Estimate shipping and tax</h3>
-    					<p>Enter your destination to get a shipping estimate</p>
-  						<form action="#" class="info">
-	              <div class="form-group">
-	              	<label for="">Country</label>
-	                <input type="text" class="form-control text-left px-3" placeholder="">
-	              </div>
-	              <div class="form-group">
-	              	<label for="country">State/Province</label>
-	                <input type="text" class="form-control text-left px-3" placeholder="">
-	              </div>
-	              <div class="form-group">
-	              	<label for="country">Zip/Postal Code</label>
-	                <input type="text" class="form-control text-left px-3" placeholder="">
-	              </div>
-	            </form>
+    		</div>
+			{%endif%}
+			{%if projects.0.title%}
+				<div class="col-lg-4 mt-5 cart-wrap ftco-animate">
+    				<div>
+    					<h3>Your Projects</h3>
     				</div>
-    				<p><a href="checkout.html" class="btn btn-primary py-3 px-4">Estimate</a></p>
-    			</div>
-    			<div class="col-lg-4 mt-5 cart-wrap ftco-animate">
+				</div>
+				{%for project in projects%} 
+    			<div class="col-lg-4 mt-5 cart-wrap ftco-animate" style="display: inline-block;">
     				<div class="cart-total mb-3">
-    					<h3>Cart Totals</h3>
+    					<h3>{{project.project_name}}</h3>
     					<p class="d-flex">
-    						<span>Subtotal</span>
-    						<span>$20.60</span>
+    						<span>Start Date</span>
+    						<span>{{project.start_date}}</span>
     					</p>
     					<p class="d-flex">
-    						<span>Delivery</span>
-    						<span>$0.00</span>
+    						<span>End Date</span>
+    						<span>{{project.end_date}}</span>
     					</p>
     					<p class="d-flex">
-    						<span>Discount</span>
-    						<span>$3.00</span>
+    						<span>Maximum Target</span>
+    						<span>{{project.max_target}}</span>
     					</p>
     					<hr>
     					<p class="d-flex total-price">
-    						<span>Total</span>
-    						<span>$17.60</span>
+    						<span>Average Rate</span>
+    						<span>{{project.average_rate}}</span>
     					</p>
     				</div>
     				<p><a href="checkout.html" class="btn btn-primary py-3 px-4">Proceed to Checkout</a></p>
-    			</div>
-    		</div>
+				</div>
+				{%endfor%}
+				</div>
+				{%else%}
+					<div class="col-lg-4 mt-5 cart-wrap ftco-animate">
+						<p><a href="checkout.html" class="btn btn-primary py-3 px-4">Add Your Projects Now!</a></p>
+					</div>
+				{%endif%}
+				{%if  projects_user_donate_for%}
+				<div class="col-lg-4 mt-5 cart-wrap ftco-animate">
+    				<div>
+    					<h3>The Projects You Donate For</h3>
+    				</div>
+				</div>
+				{%for project_donation in projects_user_donate_for%} 
+    			<div class="col-lg-4 mt-5 cart-wrap ftco-animate" style="display: inline-block;">
+    				<div class="cart-total mb-3">
+    					<h3>{{project_donation.project_name}}</h3>
+    					<p class="d-flex">
+    						<span>Start Date</span>
+    						<span>{{project_donation.start_date}}</span>
+    					</p>
+    					<p class="d-flex">
+    						<span>End Date</span>
+    						<span>{{project_donation.end_date}}</span>
+    					</p>
+    					<p class="d-flex">
+    						<span>Maximum Target</span>
+    						<span>{{project_donation.max_target}}</span>
+    					</p>
+    					<hr>
+    					<p class="d-flex total-price">
+    						<span>Amount</span>
+    						<span>{{project_donation.amount}} $</span>
+    					</p>
+    				</div>
+    				<p><a href="checkout.html" class="btn btn-primary py-3 px-4">Proceed to Checkout</a></p>
+				</div>
+				{%endfor%}
+				</div>
+				{%endif%}
+			</div>
 			</div>
 		</section>
-
+		
 		<section class="ftco-section ftco-no-pt ftco-no-pb py-5 bg-light">
       <div class="container py-4">
         <div class="row d-flex justify-content-center py-5">

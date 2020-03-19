@@ -9,4 +9,4 @@ class Donation(models.Model):
     user_id=models.ForeignKey(Users, on_delete = models.CASCADE,null=True)
     project_Id=models.ForeignKey(Projects, on_delete = models.CASCADE,null=True)
     def __str__(self):
-            return self.amount
+            return "donation"
