@@ -16,9 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from Profile import views as profile_views
+from Project_Creation.views import create_project, show_project
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('user/profile/<int:id>',profile_views.profile),
-    path('user/profile/edit',profile_views.edit_profile)
+    path('user/profile/edit',profile_views.edit_profile), 
+    path('user/profile/addProject', create_project, name = "create_project"),  
+    path('user/profile/projects/<int:id>', show_project, name = "show_project"),
 ]
+#+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from Authentication.models import Users
-from Project_Creation import Projects
+from Project_Creation.models import Projects
 from django.http import HttpRequest
 from django.http import HttpResponse
 from django.views.decorators.csrf import csrf_exempt
