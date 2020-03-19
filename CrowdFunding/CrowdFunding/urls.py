@@ -21,8 +21,13 @@ from Project_Creation.views import create_project, show_project
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('user/profile/<int:id>',profile_views.profile),
+<<<<<<< HEAD
     path('user/profile/edit',profile_views.edit_profile), 
     path('user/profile/addProject', create_project, name = "create_project"),  
     path('user/profile/projects/<int:id>', show_project, name = "show_project"),
+=======
+    path('user/profile/edit',profile_views.edit_profile),
+    path('user/addExtrainformation/<int:id>', profile_views.add_info)
+>>>>>>> dbb737d95f708dd760634c604521df771b225f0b
 ]
 #+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

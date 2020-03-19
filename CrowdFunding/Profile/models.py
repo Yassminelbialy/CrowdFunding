@@ -1,6 +1,6 @@
 from django.db import models
 from Authentication.models import Users
-from  Project_Creation.models import Projects
+from Project_Creation.models import Projects
 
 # Create your models here.
 
@@ -13,6 +13,6 @@ class ExtraInfo (models.Model):
     ##FK
     User_id=models.ForeignKey(Users, on_delete = models.CASCADE,null=True)
     def __str__(self):
-        return self.id
+        return self.country
 
 
