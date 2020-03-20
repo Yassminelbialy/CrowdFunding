@@ -1,13 +1,6 @@
 from django.shortcuts import render
-<<<<<<< HEAD
 from Authentication.models import Users
 from Project_Creation.models import Projects
-=======
-from Authentication.models import Users 
-from Project_Creation.models import Projects
-from Make_Donation.models import Donation
-from .models import ExtraInfo
->>>>>>> dbb737d95f708dd760634c604521df771b225f0b
 from django.http import HttpRequest
 from django.http import HttpResponse
 from django.views.decorators.csrf import csrf_exempt

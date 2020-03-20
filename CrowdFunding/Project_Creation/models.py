@@ -3,8 +3,8 @@ from Authentication.models import Users
 from django import forms
 from taggit.managers import TaggableManager 
 
-# # Create your models here.
 
+# # Create your models here.
 class Category(models.Model):
     id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=100)
@@ -12,15 +12,7 @@ class Category(models.Model):
             return self.name
 
 class Projects(models.Model):
-    categories = ( 
-        ("1", "Health"), 
-        ("2", "Sports"), 
-        ("3", "Innovation"), 
-        ("4", "Creativity"), 
-        ("5", "BLABLABLA"), 
-        ("6","any thing")
-    ) 
-    id=models.AutoField(primary_key=True)
+    id = models.AutoField(primary_key=True)
     project_name=models.CharField(max_length=100)
     title=models.CharField(max_length=100)
     details=models.TextField()
@@ -32,7 +24,8 @@ class Projects(models.Model):
     choosen_byAdmin=models.BooleanField(default=False)
     ##FK
     user_id=models.ForeignKey(Users, on_delete = models.CASCADE,null=True)
-    category = models.CharField(max_length=1, choices = categories, null=True)
+    category_id = models.ForeignKey(Category, on_delete=models.CASCADE, null = True)
+    
     tags = TaggableManager()
     def __str__(self):
             return self.project_name
@@ -50,4 +43,4 @@ class Images(models.Model):
     def __str__(self):
             return self.id
 
-        
+
