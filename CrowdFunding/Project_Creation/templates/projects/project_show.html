@@ -105,10 +105,37 @@
                         {{project.end_date}}
                     </p>
 
-                    <p><a href="#" class="btn btn-success py-3 px-5"> Donate </a></p>
+
+
+                    <form action="{% url 'project_donate' project.id %}" method="post">
+                        <input type="text" id="amount_donated" placeholder="enter your donation" name="donation" />
+
+                        <input type="submit" value="Donate" class="btn btn-success py-3 px-5" />
+                    </form>
+
+                    <br/>
+
+                    <p>
+                        <a href="{% url 'project_delete' project.id %}" class="btn btn-danger py-3 px-5">
+                            Delete Project 
+                        </a>
+                    </p>
+
+
+                    <br/>
+
+                    <form action="{% url 'project_comment' project.id %}" method="post">
+                        <textarea placeholder="enter your comment here" name="content">
+                        </textarea>
+
+                        <input type="submit" name="add_comment" />
+                    </form>
+
+
+
+
                 </div>
             </div>
-        </div>
     </section>
 
     <section class="ftco-section">
@@ -159,6 +186,19 @@
     <script src="{% static 'js/aos.js' %}"></script>
     <script src="{% static 'js/scrollax.min.js' %}"></script>
     <script src="{% static 'js/main.js' %}"></script>
+
+    <script>
+        onload = function() {
+            var ele = document.querySelectorAll('.amount_donated')[0];
+            ele.onkeypress = function(e) {
+                if (isNaN(this.value + "" + String.fromCharCode(e.charCode)))
+                    return false;
+            }
+            ele.onpaste = function(e) {
+                e.preventDefault();
+            }
+        }
+    </script>
 </body>
 
 </html>
