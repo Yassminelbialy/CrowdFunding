@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import get_object_or_404
 
@@ -8,6 +8,9 @@ from django.contrib import messages
 
 from Project_Creation.models import Images, Projects
 from Project_Creation.forms import ProjectForm, ImageForm
+from Make_Donation.models import Donation
+from Home_Page.models import Comments
+from Authentication.models import Users
 from taggit.models import Tag
 from django import forms
 
@@ -57,3 +60,29 @@ def show_project(request, id):
     }
     return render(request, 'projects/project_show.html' , context)
       
+
+def delete_project(request, id):
+    if request.method == 'GET':
+        project_deleted = Projects.objects.get(id=id)
+        project_deleted_user_id = project_deleted.user_id
+        project_deleted.delete()
+        
+        return redirect('user/Profile/%d' % (project_deleted_user_id)) 
+
+
+def donate_project(request, id):
+    if request.method == 'POST':
+        amount = request.POST.get('donation')
+        project = Projects.objects.get(id=id)
+        user = project.user_id
+        donation = Donation.objects.create(amount = amount, project_id = id, user_id = user)
+
+def comment_project(request, id): 
+    if request.method == 'POST':
+        content = request.POST.get('content')
+        project = Projects.objects.get(id=id)
+        user = project.user_id
+        comment = Comments.objects.create(content=content, user_id = user, project_id = project.id)
+        
+        
+    
