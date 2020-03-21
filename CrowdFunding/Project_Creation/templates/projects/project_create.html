@@ -1,0 +1,39 @@
+{% extends 'projects/base.html' %} {% block content %}
+<form id="post_form" method="post" action="" enctype="multipart/form-data">
+
+    {% csrf_token %}
+    <div class="form-group">
+        <label>Title</label> {{projectForm.title}}
+    </div>
+    <div class="form-group">
+        <label>Details</label> {{projectForm.details}}
+    </div>
+    <div class="form-group">
+        <label>Target</label>
+        <input id="numbersOnly" onkeypress='validate()' name="max_target" />
+    </div>
+    <div class="form-group">
+        <label>Category: </label> {{projectForm.category}}
+    </div>
+
+    <div class="form-group">
+        <label>Tags</label>
+        <input type="text" style="color: red;" data-role="tagsinput" class="form-control" name="tags">
+    </div>
+    <div class="form-group">
+        <label>Start Date</label>
+        <input type="date" name="start_date" />
+    </div>
+    <div class="form-group">
+        <label>End Date</label>
+        <input type="date" name="end_date" />
+    </div>
+    <div class="form-group">
+        <label>Cover Photo</label>
+        <input type="file" name="cover" />
+    </div>
+    <br/> {{ formset.management_form }}
+    <br/> {{ formset.as_p }}
+    <input type="submit" name="submit" value="Submit" style="background-color:#008CBA;" />
+</form>
+{%endblock content %}
