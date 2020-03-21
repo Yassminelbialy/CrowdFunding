@@ -2,65 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8595fa-de32-4640-9036-e452b0e88267" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Authentication/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Authentication/migrations/0002_auto_20200319_2203.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Authentication/templates/auth/activate.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Authentication/templates/auth/activate_failed.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Authentication/templates/auth/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Authentication/templates/auth/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Authentication/templates/auth/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Authentication/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Authentication/templates/profile.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Authentication/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Authentication/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Capture_EprSyxO_p1U8vSw.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Capture_YqinSYi.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Capture_hwqX13O.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/about_Gki7AUi_VeQj8UD.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/about_HHmlLfa.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/about_HHmlLfa_jn5icxL.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/image.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/about_Gki7AUi_VeQj8UD.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/image_1_HEQflyA.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Authentication/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Authentication/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Authentication/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CrowdFunding/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/CrowdFunding/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CrowdFunding/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/CrowdFunding/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Profile/templates/profile/user_profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/Profile/templates/profile/user_profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Profile/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Profile/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home_Page/templates/Home_Page/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Home_Page/templates/Home_Page/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project_Creation/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project_Creation/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project_Creation/templates/projects/project_show.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project_Creation/templates/projects/project_show.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project_Creation/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project_Creation/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/about.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/about_Gki7AUi.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/bg_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/bg_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/bg_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/category-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/category-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/category-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/category-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/category.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/image_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image_1_HEQflyA.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/image_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image_2_E9HFoLs.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/image_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/image_4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/image_5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/image_6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/person_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/person_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/person_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/person_4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/product-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/product-10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/product-11.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/product-12.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/product-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/product-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/product-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/product-5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/product-6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/product-7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/product-8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/product-9.jpg" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -85,11 +32,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Project_Creation/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="53" />
+            <state relative-caret-position="57">
+              <caret line="16" column="52" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Home_Page/templates/Home_Page/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="616">
+              <caret line="108" column="11" selection-start-line="108" selection-start-column="11" selection-end-line="108" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -103,14 +59,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CrowdFunding/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="30" column="36" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
-              <folding>
-                <element signature="e#636#668#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-202">
+              <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -119,7 +72,7 @@
         <entry file="file://$PROJECT_DIR$/Home_Page/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="173">
-              <caret line="27" column="42" lean-forward="true" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
+              <caret line="27" column="42" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
               <folding>
                 <element signature="e#0#54#0" expanded="true" />
               </folding>
@@ -168,10 +121,11 @@
         <option value="$PROJECT_DIR$/Profile/models.py" />
         <option value="$PROJECT_DIR$/Home_Page/models.py" />
         <option value="$PROJECT_DIR$/Make_Donation/models.py" />
-        <option value="$PROJECT_DIR$/Project_Creation/models.py" />
-        <option value="$PROJECT_DIR$/CrowdFunding/urls.py" />
         <option value="$PROJECT_DIR$/CrowdFunding/settings.py" />
         <option value="$PROJECT_DIR$/Authentication/models.py" />
+        <option value="$PROJECT_DIR$/CrowdFunding/urls.py" />
+        <option value="$PROJECT_DIR$/Project_Creation/models.py" />
+        <option value="$PROJECT_DIR$/Home_Page/templates/Home_Page/index.html" />
       </list>
     </option>
   </component>
@@ -197,6 +151,19 @@
             <path>
               <item name="CrowdFunding" type="b2602c69:ProjectViewProjectNode" />
               <item name="CrowdFunding" type="462c0819:PsiDirectoryNode" />
+              <item name="Home_Page" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CrowdFunding" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CrowdFunding" type="462c0819:PsiDirectoryNode" />
+              <item name="Home_Page" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CrowdFunding" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CrowdFunding" type="462c0819:PsiDirectoryNode" />
+              <item name="Home_Page" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="Home_Page" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -240,7 +207,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24289985" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24289985" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -251,7 +218,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.14675768" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.097269624" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.061443932" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -387,16 +354,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Project_Creation/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Home_Page/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -409,7 +366,7 @@
     <entry file="file://$PROJECT_DIR$/Home_Page/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="173">
-          <caret line="27" column="42" lean-forward="true" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
+          <caret line="27" column="42" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
           <folding>
             <element signature="e#0#54#0" expanded="true" />
           </folding>
@@ -418,11 +375,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CrowdFunding/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="30" column="36" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
+        <state relative-caret-position="-202">
+          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project_Creation/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="16" column="52" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
           <folding>
-            <element signature="e#636#668#0" expanded="true" />
+            <element signature="e#0#28#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Home_Page/templates/Home_Page/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="108" column="11" selection-start-line="108" selection-start-column="11" selection-end-line="108" selection-end-column="11" />
         </state>
       </provider>
     </entry>

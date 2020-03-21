@@ -2,8 +2,8 @@ from django.forms import ModelForm
 from .models import Projects, Images, Category
 from django import forms 
 from taggit.managers import TaggableManager 
-
-
+from Make_Donation.models import Donation
+from Home_Page.models import Comments, Report
 
 categories = Category.objects.all() 
 
@@ -35,3 +35,16 @@ class ImageForm(ModelForm):
     class Meta:
         model = Images
         fields = ['image']    
+        
+        
+        
+class DonationForm(ModelForm):
+    amount = forms.IntegerField()
+    class Meta:
+        model = Donation
+        fields = ['amount']
+        
+
+class ReportForm(ModelForm):
+    pass 
+        
