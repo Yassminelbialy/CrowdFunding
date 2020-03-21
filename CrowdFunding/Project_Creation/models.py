@@ -14,7 +14,7 @@ class Category(models.Model):
 class Projects(models.Model):
     id = models.AutoField(primary_key=True)
     project_name=models.CharField(max_length=100)
-    # created = models.DateTimeField(auto_now_add=True, default='2020-03-21')
+    created = models.DateTimeField(auto_now_add=True)
     title=models.CharField(max_length=100)
     details=models.TextField()
     start_date= models.DateField(auto_now=False, auto_now_add=False)

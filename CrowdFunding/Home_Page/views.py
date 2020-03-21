@@ -2,8 +2,7 @@ from django.shortcuts import get_object_or_404, render
 from django.http import HttpResponse
 from Project_Creation.models import Projects, Category
 
-def content(request,*arg,**karg):
-    return render(request,"Home_Page/test.html",{})
+
 def index(request):
     #slider latest top rated project
     top_rated = Projects.objects.order_by('-created').order_by('-average_rate')[:5]
@@ -32,3 +31,5 @@ def select_tag(request, cat_id):
         'category_projects': category_projects
     }
     return render(request, 'Home_Page/category.html', context)
+
+

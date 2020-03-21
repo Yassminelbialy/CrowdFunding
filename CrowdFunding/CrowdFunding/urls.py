@@ -19,7 +19,6 @@ from Project_Creation.views import create_project, show_project
 from django.conf import settings
 from django.conf.urls.static import static
 from django.urls import path, include
-from Home_Page.views import content
 urlpatterns = [
     path('',include('Authentication.urls')),
     path('admin/', admin.site.urls),
