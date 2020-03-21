@@ -3,7 +3,7 @@
   <head>
 	{%load static%}
 	
-    <title>Vegefoods - Free Bootstrap 4 Template by Colorlib</title>
+    <title>Crowd Funding</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
@@ -20,7 +20,26 @@
     <link rel="stylesheet" href="{%static 'css/jquery.timepicker.css'%}">
     <link rel="stylesheet" href="{%static 'css/flaticon.css'%}">
     <link rel="stylesheet" href="{%static 'css/icomoon.css'%}">
-    <link rel="stylesheet" href="{%static 'css/style.css'%}">
+	<link rel="stylesheet" href="{%static 'css/style.css'%}">
+	<style>
+		.error-message {
+			color: #cc0033;
+			display: inline-block;
+			font-size: 12px;
+			line-height: 15px;
+			margin: 5px 0 0;
+		}
+		.avatar {
+			width:128px;
+			margin: 10px;
+			border:10px solid red;
+			-webkit-border-radius: 500px;
+			-moz-border-radius: 500px;
+			box-sizing: border-box;
+			background-color: #DDD;
+			border: 5px solid #cfd8dc;
+		}
+	</style>
   </head>
   <body class="goto-here">
 		<div class="py-1 bg-primary">
@@ -29,15 +48,15 @@
 	    		<div class="col-lg-12 d-block">
 		    		<div class="row d-flex">
 		    			<div class="col-md pr-4 d-flex topper align-items-center">
-					    	<div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
-						    <span class="text">+ 1235 2355 98</span>
+					    	<!-- <div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div> -->
+						    <!-- <span class="text">+ 1235 2355 98</span> -->
 					    </div>
 					    <div class="col-md pr-4 d-flex topper align-items-center">
-					    	<div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
-						    <span class="text">youremail@email.com</span>
+					    	<!-- <div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div> -->
+						    <!-- <span class="text">youremail@email.com</span> -->
 					    </div>
-					    <div class="col-md-5 pr-4 d-flex topper align-items-center text-lg-right">
-						    <span class="text">3-5 Business days delivery &amp; Free Returns</span>
+					    <!-- <div class="col-md-5 pr-4 d-flex topper align-items-center text-lg-right"> -->
+						    <!-- <span class="text">3-5 Business days delivery &amp; Free Returns</span> -->
 					    </div>
 				    </div>
 			    </div>
@@ -46,7 +65,7 @@
     </div>
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Vegefoods</a>
+	      <a class="navbar-brand" href="index.html">Crowd Funding</a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
@@ -72,24 +91,13 @@
 	      </div>
 	    </div>
 	  </nav>
-    <!-- END nav -->
-
-    <!-- <div class="hero-wrap hero-bread" style="background-image: url('images/bg_1.jpg');">
-      <div class="container">
-        <div class="row no-gutters slider-text align-items-center justify-content-center">
-          <div class="col-md-9 ftco-animate text-center">
-          	<p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>Cart</span></p>
-            <h1 class="mb-0 bread">My Cart</h1>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
     <section class="ftco-section ftco-cart">
 			<div class="container">
 				<div class="row">
     			<div class="col-md-12 ftco-animate">
     				<div class="cart-list">
+						{% load static %}
+						<img src="{% static 'images/image_1_HEQflyA.jpg' %}" class=".avatar">
 	    				<table class="table">
 						    <thead class="thead-primary">
 						      <tr class="text-center">
@@ -103,9 +111,9 @@
 						        <td class="product-name">
 						        	<h3>First Name</h3>
 						        </td>
-						        <td class="price">
-								  	{%csrf_token%}
-									<h6 value="First_name">{{data.First_name}}</h6>
+						        <td class="price" value="First_name">
+									<h6 >{{data.First_name}}</h6>
+									
 								</td>
 								<td class="product-remove" id="td"><a href="#" id="firstnameedit">Edit</a></td>
 							  </tr><!-- END TR-->
@@ -113,30 +121,38 @@
 						        <td class="product-name">
 						        	<h3>Last Name</h3>
 						        </td>
-						        <td class="price"  ><h6 value="Last_name" >{{data.Last_name}}</h6></td>
+						        <td class="price"  value="Last_name"><h6 >{{data.Last_name}}</h6></td>
 								<td class="product-remove"><a href="#" id="firstnameedit">Edit</a></td>
 							  </tr><!-- END TR-->
-							  <tr class="text-center">
-						        <td class="product-name">
-						        	<h3>Email</h3>
-						        </td>
-						        <td class="price"  ><h6 value="email">{{data.email}}</h6></td>
-								<td class="product-remove" ><a href="#" id="firstnameedit">Edit</a></td>
-							  </tr><!-- END TR-->
+							  
 							  <tr class="text-center">
 						        <td class="product-name">
 						        	<h3>Phone Number</h3>
 						        </td>
-						        <td class="price"><h6 value="phone">{{data.phone}}</h6></td>
+						        <td class="price" value="phone"><h6 >{{data.phone}}</h6></td>
 								<td class="product-remove"><a href="#" id="firstnameedit">Edit</a></td>
 							  </tr><!-- END TR-->
 							  <tr class="text-center" >
 						        <td class="product-name">
 						        	<h3>Password</h3>
 						        </td>
-						        <td class="price"><h6 value="password">..........</h6></td>
+								<td class="price" value="password">
+									<h6  style="font-weight: bold;">..........</h6>
+									
+								</td>
+								
 								<td class="product-remove"><a href="#" id="firstnameedit">Edit</a></td>
 							  </tr><!-- END TR-->
+							  <tr class="text-center">
+						        <td class="product-name">
+									<h3>Email</h3>
+									
+						        </td>
+						        <td class="price" value="email">
+									<h6 >{{data.email}}</h6>
+									
+								</td>
+							  </tr>
 							  
 						    </tbody>
 						  </table>
@@ -173,7 +189,12 @@
 			</div>
 			{%endif%}
 			{% if  extra_info.0.country%}
-			<div class="container">
+			<div class="col-lg-4 mt-5 cart-wrap ftco-animate">
+    				<div>
+    					<h3>Extra Information</h3>
+    				</div>
+				</div>
+			<div class="container" >
 				<div class="row">
     			<div class="col-md-12 ftco-animate">
     				<div class="cart-list">
@@ -190,27 +211,48 @@
 						        <td class="product-name">
 						        	<h3>Country</h3>
 						        </td>
-						        <td class="price">
-									<h6 value="country">{{extra_info.0.country}}</h6>
+						        <td class="price" value="country">
+									<h6 >{{extra_info.0.country}}</h6>
+									
 								</td>
-								<td class="product-remove" id="td"><a href="#" id="firstnameedit">Edit</a></td>
+								<td class="product-remove" id="td"><a href="#" >Edit</a></td>
 							  </tr><!-- END TR-->
-							  <tr class="text-center">
-						        <td class="product-name">
-						        	<h3>FaceBook</h3>
-						        </td>
-						        <td class="price"  ><h6 value="FB_link" >{{extra_info.0.FB_link}}</h6></td>
-								<td class="product-remove"><a href="#" id="firstnameedit">Edit</a></td>
-							  </tr><!-- END TR-->
+							  <!-- END TR-->
 							  <tr class="text-center">
 						        <td class="product-name">
 						        	<h3>BirthDate</h3>
 						        </td>
-						        <td class="price"  ><h6 value="Birth_day">{{extra_info.0.Birth_day}}</h6></td>
-								<td class="product-remove" ><a href="#" id="firstnameedit">Edit</a></td>
+								<td class="price" value="Birth_day" >
+									<h6 >{{extra_info.0.Birth_day}}</h6>
+									
+								</td>
+								<td class="product-remove" ><a href="#">Edit</a></td>
 							  </tr><!-- END TR--> 
+							  <tr class="text-center">
+						        <td class="product-name">
+									<h3>FaceBook</h3>
+									
+						        </td>
+						        <td class="price" value="FB_link"  >
+									<h6  >{{extra_info.0.FB_link}}</h6>
+									
+								</td>
+							  </tr>
+							  <tr class="text-center">
+						        <td class="product-name">
+									
+						        </td>
+						        <td>
+									
+								</td>
+								<td class="price">
+									
+								</td>
+							  </tr>
+
 						    </tbody>
 						  </table>
+						  
 					  </div>
     			</div>
     		</div>
@@ -260,7 +302,7 @@
 				</div>
 				{%for project_donation in projects_user_donate_for%} 
     			<div class="col-lg-4 mt-5 cart-wrap ftco-animate" style="display: inline-block;">
-    				<div class="cart-total mb-3">
+    				<div class="cart-total mb-3" style="display: inline-block;">
     					<h3>{{project_donation.project_name}}</h3>
     					<p class="d-flex">
     						<span>Start Date</span>
@@ -285,8 +327,13 @@
 				{%endfor%}
 				</div>
 				{%endif%}
+				<div class="col-lg-4 mt-5 cart-wrap ftco-animate">
+					<a href="" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal">Remove MY Account</a>
+				</div>
 			</div>
+			
 			</div>
+
 		</section>
 		
 		<section class="ftco-section ftco-no-pt ftco-no-pb py-5 bg-light">
@@ -380,7 +427,35 @@
         </div>
       </div>
     </footer>
+    <div class="container">
+
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
     
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Are You Sure?</h4>
+        </div>
+        <div class="modal-body">
+		  <p>confirm your password</p>
+		  <input type="password" name="password" id="modalpasswordinput">
+		  <span class="error-message" id="modalpassworderror" hidden>the password you entered is incorrect</span>
+		  <div class="modal-footer">
+				<button  class="btn btn-danger" onclick="removeAcount()">remove</button>
+          		<button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
   
 
   <!-- loader -->
@@ -401,9 +476,11 @@
   <script src="{%static 'js/bootstrap-datepicker.js'%}"></script>
   <script src="{%static 'js/scrollax.min.js'%}"></script>
   <script src="{%static 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false'%}"></script>
+  
   <script src="{%static 'js/google-map.js"></script>
   <script src="{%static 'js/main.js'%}"></script>
   <script src="{%static 'js/profile.js'%}"></script>
+  <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
   
   <script>   
 	function profileDataEdit(target,newValue,propertyName) {
@@ -417,12 +494,34 @@
 				newValue:newValue
 			},
 			success: function (result) {
-				console.log(result);
-				target.innerText="Edit";
-				newValue=$(target).closest('td').prev('td').children("input")[0].value;
-				$(target).closest('td').prev('td')[0].innerHTML="<h6 id='firstname'></h6>";
-				$(target).closest('td').prev('td').children("h6")[0].innerText=newValue;	
-
+				if(result=="incorrect"){
+					$(target).closest('td').prev('td').children("div").removeAttr("hidden");
+				}else{
+					console.log(result);
+					target.innerText="Edit";
+					newValue=$(target).closest('td').prev('td').children("input")[0].value;
+					$(target).closest('td').prev('td')[0].innerHTML="<h6></h6>";
+					$(target).closest('td').prev('td').children("h6")[0].innerText=newValue;	
+				}	
+			},
+			error: function (error) { console.log(error) }
+    	});
+	}
+	function removeAcount() {
+		$.ajax({
+			url: "/user/profile/remove",
+			type: "post",
+			data:{
+				csrfmiddlewaretoken:$('input[name=csrfmiddlewaretoken]').val(),
+				id:'{{data.user_id}}',
+				password:$("#modalpasswordinput").val()
+			},
+			success: function (result) {
+				if(result=="incorrect"){
+					$("#modalpassworderror").removeAttr("hidden");
+				}else{
+					console.log("remove")	
+				}	
 			},
 			error: function (error) { console.log(error) }
     	});
@@ -431,17 +530,39 @@
 	document.addEventListener('click', function(event){
 		if(event.target.innerText=="Save"){
 			newValue=$(event.target).closest('td').prev('td').children("input")[0].value;
+			var propertyName=$(event.target).closest('td').prev('td').attr("value");
+			console.log(propertyName)
 			profileDataEdit(event.target,newValue,propertyName);
 		}else if(event.target.innerText=="Edit"){
 			var oldValue=$(event.target).closest('td').prev('td').children("h6")[0].innerHTML;
-			propertyName=$(event.target).closest('td').prev('td').children("h6").attr("value");
+			var propertyName=$(event.target).closest('td').prev('td').attr("value");
 			console.log(propertyName);
-			$(event.target).closest('td').prev('td')[0].innerHTML="<input type='Text' required>"
+			if(propertyName=="email")
+				$(event.target).closest('td').prev('td')[0].innerHTML="<input type='email' value='email' required> <br> <div class='error-message'  hidden>Incorrect Email please insert a valid email.</div>"
+			else if(propertyName=="phone")
+				$(event.target).closest('td').prev('td')[0].innerHTML="<input type='number' value='phone' required> <br> <div class='error-message'   hidden>Incorrect Phone Number</div>"
+			else if(propertyName=="password")
+				$(event.target).closest('td').prev('td')[0].innerHTML="<input type='password' value='password' required> <br> <div class='error-message' hidden>Password must be more six character or more.</div>"
+			else if(propertyName=="FB_link")
+				$(event.target).closest('td').prev('td')[0].innerHTML="<input type='url' value='FB_link' required> <br> <div class='error-message'      hidden>Incorrect Account</div>"
+			else if(propertyName=="Birth_day")
+				$(event.target).closest('td').prev('td')[0].innerHTML="<input type='date' value='Birth_day' required> <br> <div class='error-message' hidden>Incorrect Date</div>"
+			else if(propertyName=="First_name")
+				$(event.target).closest('td').prev('td')[0].innerHTML="<input type='text' value='First_name' required> <br> <div class='error-message' hidden>First Name must must be between 4-8 charcters and have no spaces</div>"
+				
+			else if(propertyName=="Last_name")
+				$(event.target).closest('td').prev('td')[0].innerHTML="<input type='text' value='Last_name' required> <div class='error-message' hidden>Last Name must must be between 4-8 charcters and have no spaces</div>"
+			else if(propertyName=="country")
+				$(event.target).closest('td').prev('td')[0].innerHTML="<input type='text' value='country' required>"
+
+
+
 			$(event.target).closest('td').prev('td').children("input")[0].value=oldValue;
 			event.target.innerText="Save";
 		}
 	})
-  </script> 
+  </script>
+   
 
 
   <script>
