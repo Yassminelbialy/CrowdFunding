@@ -26,7 +26,7 @@ urlpatterns = [
     path('user/profile/edit',profile_views.edit_profile), 
     path('user/profile/addProject', create_project, name = "create_project"),  
     path('user/profile/projects/<int:id>', show_project, name = "show_project"),
-    path('home', include('Home_Page.urls')),
+    path('home/', include('Home_Page.urls')),
 
 ]
 #+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
