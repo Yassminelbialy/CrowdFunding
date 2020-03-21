@@ -8,8 +8,7 @@ from django.http import HttpResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.shortcuts import get_object_or_404,redirect
 from django.db.models import Sum
-
-
+import re
 # Create your views here.
 
 # profile page
@@ -43,26 +42,59 @@ def profile(request,id):
 @csrf_exempt
 def edit_profile(request):
     if request.method=='POST':
-        propertyName=request.POST['propertyName']
+        propertyName = request.POST.get('propertyName', False)
+        newValue = request.POST['newValue'];
         print(propertyName)
         if(propertyName=="First_name"):
-            Users.objects.filter(user_id=request.POST['id']).update(First_name=request.POST['newValue'])
+            if ' ' in newValue or len(newValue) > 8 or len(newValue) < 4:
+                return HttpResponse("incorrect")
+            else:
+                Users.objects.filter(user_id=request.POST['id']).update(First_name=newValue)
+                return HttpResponse("done")
         elif(propertyName=="Last_name"):
-            Users.objects.filter(user_id=request.POST['id']).update(Last_name=request.POST['newValue'])
+            if ' ' in newValue or len(newValue) > 8 or len(newValue) < 4:
+                return HttpResponse("incorrect")
+            else:
+                Users.objects.filter(user_id=request.POST['id']).update(Last_name=newValue)
+                return HttpResponse("done")
         elif(propertyName == "email"):
-            Users.objects.filter(user_id=request.POST['id']).update(email=request.POST['newValue'])
+            regex = '^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$'
+            if re.search(regex, newValue):
+                Users.objects.filter(user_id=request.POST['id']).update(email=newValue)
+                return HttpResponse("done")
+            else:
+                return HttpResponse("incorrect")
         elif(propertyName == "phone"):
-            Users.objects.filter(user_id=request.POST['id']).update(phone=request.POST['newValue'])
-            print(request.POST['newValue'])
+            regex = '^01[0,2,5,1]{1}[0-9]{8}'
+            if re.search(regex, newValue):
+                Users.objects.filter(user_id=request.POST['id']).update(phone=newValue)
+                return HttpResponse("done")
+            else:
+                return HttpResponse("incorrect")
         elif(propertyName == "password"):
-            Users.objects.filter(user_id=request.POST['id']).update(password=request.POST['newValue'])
+            if len(newValue) >= 6:
+                Users.objects.filter(user_id=request.POST['id']).update(password=newValue)
+                return HttpResponse("done")
+            else:
+                return HttpResponse("incorrect")
         elif(propertyName == "country"):
-            ExtraInfo.objects.filter(User_id_id=request.POST['id']).update(country=request.POST['newValue'])
+            ExtraInfo.objects.filter(User_id_id=request.POST['id']).update(country=newValue)
+            return HttpResponse("done")
         elif(propertyName == "FB_link"):
-            ExtraInfo.objects.filter(User_id_id=request.POST['id']).update(FB_link=request.POST['newValue'])
+            regex ="(?:(?:http|https):\/\/)?(?:www.)?facebook.com\/(?:(?:\w)*#!\/)?(?:pages\/)?(?:[?\w\-]*\/)?(?:profile.php\?id=(?=\d.*))?([\w\-]*)?"
+            if re.search(regex, newValue):
+                ExtraInfo.objects.filter(User_id_id=request.POST['id']).update(FB_link=newValue)
+                return HttpResponse("done")
+            else:
+                return HttpResponse("incorrect")
         elif(propertyName == "Birth_day"):
-            ExtraInfo.objects.filter(User_id_id = request.POST['id']).update(Birth_day= request.POST['newValue'])
-        return HttpResponse("done")
+            regex = '^(19|20)\d\d[- /.](0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])$'
+            if re.search(regex, newValue):
+                ExtraInfo.objects.filter(User_id_id = request.POST['id']).update(Birth_day= newValue)
+                return HttpResponse("done")
+            else:
+                return HttpResponse("incorrect")
+        
 
 
 #addinf Extra information
@@ -75,9 +107,21 @@ def add_info(request,id):
             country=request.POST['country'],
             FB_link=request.POST['facebook'],
             Birth_day=request.POST['birthdate']
-    )
+        )
 
     return redirect(profile,id=id)
+
+
+#remove user account
+@csrf_exempt
+def remove_account(request):
+    if request.method == 'POST':
+       id=request.POST['id'] 
+       if Users.objects.filter(user_id=id,password=request.POST['password']).count():
+           Users.objects.filter(user_id=id,password=request.POST['password']).delete()
+           return HttpResponse("deleted")
+       else:
+           return HttpResponse("incorrect")
     
 
 
