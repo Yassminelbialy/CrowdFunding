@@ -21,6 +21,7 @@ from django.conf.urls.static import static
 from django.urls import path, include
 from Home_Page.views import content
 urlpatterns = [
+    path('',include('Authentication.urls')),
     path('admin/', admin.site.urls),
     path('user/profile/<int:id>',profile_views.profile),
     path('user/profile/edit',profile_views.edit_profile), 
