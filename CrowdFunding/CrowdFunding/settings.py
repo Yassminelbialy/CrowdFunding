@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 
 import os
 
+from django.contrib import messages
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -81,12 +82,13 @@ WSGI_APPLICATION = 'CrowdFunding.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3' ,
-         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        # 'HOST': '',
-        # 'PORT': '',
-        # 'USER': '',
-        # 'PASSWORD': ''
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': "crowdfunding",
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
+        'USER': 'root',
+        'PASSWORD': 'yaso37abeby'
+
     }
 }
 
@@ -131,3 +133,23 @@ STATIC_URL = '/static/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
+
+EMAIL_HOST='smtp.gmail.com'
+EMAIL_HOST_USER='eslamtaher264@gmail.com'
+EMAIL_HOST_PASSWORD='************'
+EMAIL_USE_TLS=True
+EMAIL_PORT=587
+
+MESSAGE_TAGS ={
+    messages.ERROR:'danger'
+}
+
+
+# LOGIN_URL='/auth/user_login'
+
+LOGIN_URL='login'
+LOGIN_REDIRECT_URL='profile'
+LOGOUT_URL='logout'
+LOGOUT_REDIRECT_URL='login'
+
