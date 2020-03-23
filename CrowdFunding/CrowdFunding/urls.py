@@ -15,12 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from Profile import views as profile_views
-from django.urls import include, path
+from django.conf import settings
+from django.conf.urls.static import static
+from django.urls import path, include
 from Project_Creation.views import create_project, show_project,donate_project, comment_project, delete_project
-
 
 urlpatterns = [
     path('',include('Authentication.urls')),
+    path('home', include('Home_Page.urls')),
     path('admin/', admin.site.urls),
     path('user/profile/<int:id>',profile_views.profile),
     path('user/profile/edit',profile_views.edit_profile),

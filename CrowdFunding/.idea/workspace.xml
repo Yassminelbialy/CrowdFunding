@@ -2,11 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8595fa-de32-4640-9036-e452b0e88267" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Authentication/migrations/0003_auto_20200321_0525.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Home_Page/static/333.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Home_Page/static/35439085_2104146376464592_8929447994357448704_n.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Home_Page/static/35687109_617169181990618_946119868686532608_n.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Home_Page/static/Home_Page/333.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Home_Page/static/Home_Page/35439085_2104146376464592_8929447994357448704_n.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Home_Page/static/Home_Page/35687109_617169181990618_946119868686532608_n.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Home_Page/static/Home_Page/36509807_2067147670269058_7005995123326582784_n.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Home_Page/static/Home_Page/robo3t.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Home_Page/static/robo3t.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/0f32dfca-fe00-48ed-a32e-31352acfaa45.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/35077636_663706237311822_6277255717132959744_n.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/projects/333.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/projects/35439085_2104146376464592_8929447994357448704_n.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/projects/35687109_617169181990618_946119868686532608_n.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/projects/36509807_2067147670269058_7005995123326582784_n.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/projects/robo3t.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/35439085_2104146376464592_8929447994357448704_n.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/35687109_617169181990618_946119868686532608_n.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/36509807_2067147670269058_7005995123326582784_n.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/robo3t.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Authentication/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrowdFunding/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/CrowdFunding/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CrowdFunding/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/CrowdFunding/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Home_Page/templates/Home_Page/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Home_Page/templates/Home_Page/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project_Creation/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project_Creation/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project_Creation/templates/projects/project_show.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project_Creation/templates/projects/project_show.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project_Creation/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project_Creation/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home_Page/templates/Home_Page/test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home_Page/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Home_Page/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project_Creation/migrations/0008_projects_created.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project_Creation/migrations/0008_projects_created.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,11 +44,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CrowdFunding/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-215">
-              <caret line="133" column="30" selection-start-line="133" selection-start-column="30" selection-end-line="133" selection-end-column="30" />
+            <state relative-caret-position="-1515">
+              <caret line="85" column="53" selection-start-line="85" selection-start-column="53" selection-end-line="85" selection-end-column="53" />
               <folding>
                 <element signature="e#313#322#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Project_Creation/migrations/0008_projects_created.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -41,11 +74,18 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Home_Page/templates/Home_Page/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="616">
-              <caret line="108" column="11" selection-start-line="108" selection-start-column="11" selection-end-line="108" selection-end-column="11" />
+            <state relative-caret-position="2377">
+              <caret line="131" selection-start-line="131" selection-end-line="131" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -53,8 +93,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Authentication/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+            <state relative-caret-position="225">
+              <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -62,8 +102,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CrowdFunding/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-202">
-              <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+            <state relative-caret-position="-148">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
             </state>
           </provider>
         </entry>
@@ -71,8 +111,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Home_Page/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="27" column="42" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
+            <state relative-caret-position="148">
+              <caret line="26" column="42" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
               <folding>
                 <element signature="e#0#54#0" expanded="true" />
               </folding>
@@ -121,19 +161,20 @@
         <option value="$PROJECT_DIR$/Profile/models.py" />
         <option value="$PROJECT_DIR$/Home_Page/models.py" />
         <option value="$PROJECT_DIR$/Make_Donation/models.py" />
-        <option value="$PROJECT_DIR$/CrowdFunding/settings.py" />
-        <option value="$PROJECT_DIR$/Authentication/models.py" />
-        <option value="$PROJECT_DIR$/CrowdFunding/urls.py" />
         <option value="$PROJECT_DIR$/Project_Creation/models.py" />
+        <option value="$PROJECT_DIR$/Authentication/models.py" />
         <option value="$PROJECT_DIR$/Home_Page/templates/Home_Page/index.html" />
+        <option value="$PROJECT_DIR$/CrowdFunding/urls.py" />
+        <option value="$PROJECT_DIR$/CrowdFunding/settings.py" />
+        <option value="$PROJECT_DIR$/Project_Creation/migrations/0008_projects_created.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="10" />
-    <option name="y" value="20" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1346" />
-    <option name="height" value="728" />
+    <option name="height" value="726" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -141,41 +182,13 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="CrowdFunding" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CrowdFunding" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CrowdFunding" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CrowdFunding" type="462c0819:PsiDirectoryNode" />
-              <item name="Home_Page" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CrowdFunding" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CrowdFunding" type="462c0819:PsiDirectoryNode" />
-              <item name="Home_Page" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CrowdFunding" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CrowdFunding" type="462c0819:PsiDirectoryNode" />
-              <item name="Home_Page" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="Home_Page" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../myvir/Scripts" />
+    <property name="last_opened_file_path" value="C:/Program Files (x86)/Odoo 12.0" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -207,7 +220,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24289985" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24289985" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -218,7 +231,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.097269624" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.4249147" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.061443932" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -337,23 +350,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CrowdFunding/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-215">
-          <caret line="133" column="30" selection-start-line="133" selection-start-column="30" selection-end-line="133" selection-end-column="30" />
-          <folding>
-            <element signature="e#313#322#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Authentication/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Home_Page/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -365,18 +361,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Home_Page/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="27" column="42" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
+        <state relative-caret-position="148">
+          <caret line="26" column="42" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
           <folding>
             <element signature="e#0#54#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CrowdFunding/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-202">
-          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -392,8 +381,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Home_Page/templates/Home_Page/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="108" column="11" selection-start-line="108" selection-start-column="11" selection-end-line="108" selection-end-column="11" />
+        <state relative-caret-position="2377">
+          <caret line="131" selection-start-line="131" selection-end-line="131" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Authentication/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CrowdFunding/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-148">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CrowdFunding/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1515">
+          <caret line="85" column="53" selection-start-line="85" selection-start-column="53" selection-end-line="85" selection-end-column="53" />
+          <folding>
+            <element signature="e#313#322#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project_Creation/migrations/0008_projects_created.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
         </state>
       </provider>
     </entry>

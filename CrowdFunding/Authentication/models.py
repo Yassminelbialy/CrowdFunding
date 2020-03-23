@@ -8,7 +8,7 @@ class Users(models.Model):
     password=models.CharField(max_length=100)
     image = models.ImageField()
     email = models.EmailField(max_length=254)
-    phone=models.CharField(max_length=11)
+    phone=models.CharField(max_length=15)
     is_active=models.BooleanField()
     
     def __str__(self):

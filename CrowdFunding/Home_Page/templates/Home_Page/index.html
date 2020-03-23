@@ -56,7 +56,8 @@
 
       {% for project in top_rated %}
       <div class="item ">
-        <img src="{% static "./" %}{{project.cover}}" alt="Los Angeles" style="width:100%; height:250px;">
+       <a href="user/profile/projects/{{project.id}}"> <img src="{% static "./" %}{{project.cover}}" alt="Los Angeles" style="width:100%; height:250px;"></a>
+          
         <div class="carousel-caption">
           <h3>{{project.title}}</h3>
           <p>{{project.details}}</p>
@@ -89,10 +90,31 @@
         <p>No Categories are available.</p>
     {% endif %}
   </div>
-   <div class="container">
+
+  {% comment %} projects last added  {% endcomment %}
+    <div class="container">
         <h1>{{category_name}}</h1>
         <div class="row">
         {% for project in latest_projects %}
+          <div class="col-sm-4 mt-5">
+            <div class="card" style="width: 18rem;">
+              <img src="{% static './' %}{{project.cover}}" class="card-img-top" style="width:100%; height:100px;">
+              <div class="card-body">
+                <h5 class="card-title">{{project.title}}</h5>
+                <p class="card-text">{{project.details}}</p>
+                  <h5>Rate : {{project.average_rate}} </h5>
+                <a href="#" class="btn btn-success">Donate</a>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+        </div>
+    </div>
+    {% comment %} Choosen by adman {% endcomment %}
+    <div class="container">
+        <h1>{{category_name}}</h1>
+        <div class="row">
+        {% for project in chosen_projects %}
           <div class="col-sm-4 mt-5">
             <div class="card" style="width: 18rem;">
               <img src="{% static './' %}{{project.cover}}" class="card-img-top" style="width:100%; height:100px;">
