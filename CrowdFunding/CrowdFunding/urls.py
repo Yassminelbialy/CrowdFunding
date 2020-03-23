@@ -30,6 +30,7 @@ urlpatterns = [
     path('user/profile/remove',profile_views.remove_account), 
     path('user/profile/addProject', create_project, name = "create_project"),  
     path('user/profile/projects/<int:id>', show_project, name = "show_project"),
+    path('home/', include('Home_Page.urls')),
     path('project/donate/<int:id>', donate_project, name="project_donate"),
     path('project/comment/<int:id>', comment_project, name="project_comment"),
     path('project/delete/<int:id>', delete_project, name="project_delete")

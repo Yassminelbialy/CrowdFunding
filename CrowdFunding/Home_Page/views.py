@@ -1,5 +1,5 @@
 from django.shortcuts import get_object_or_404, render
-from django.http import HttpResponse
+from django.db.models import Q
 from Project_Creation.models import Projects, Category
 
 
@@ -31,5 +31,14 @@ def select_tag(request, cat_id):
         'category_projects': category_projects
     }
     return render(request, 'Home_Page/category.html', context)
+	
+	
+def search(request):
+    query = request.GET.get('q')
+    result = Projects.objects.filter(Q(title__icontains=query))
+    context = {
+        'result': result
+    }
+    return render(request, 'Home_Page/result.html', context)
 
 

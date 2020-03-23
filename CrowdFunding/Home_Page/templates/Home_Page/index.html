@@ -32,8 +32,14 @@
 
 </style>
 <body>
-
 {% load static %}
+  <form class="form-inline my-2 my-lg-0" method="get" action="{% url 'Home_Page:search' %}">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="q" value="{{request.GET.q}}">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+  </form>
+
+
+
 <div class="container" style="background-color: green ;  border-radius: 25px; padding-top:20px">
 
   <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="1150">
@@ -91,6 +97,7 @@
         <p>No Categories are available.</p>
     {% endif %}
   </div>
+
   {% comment %} projects last added  {% endcomment %}
   <h2 style="margin:25px 100px;text-decoration: underline; "> Latest Projects : </h2>
 
@@ -111,7 +118,7 @@
           </div>
         {% endfor %}
         </div>
-    </div> 
+    </div>
     {% comment %} Choosen by adman {% endcomment %}
     <h2 style="margin:25px 100px;text-decoration: underline; "> preferred By Admin: </h2>
 
