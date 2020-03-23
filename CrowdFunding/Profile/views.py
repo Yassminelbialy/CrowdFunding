@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from Authentication.models import Users
 from Project_Creation.models import Projects
+from .models import ExtraInfo
+from Make_Donation.models import Donation
 from django.http import HttpRequest
 from django.http import HttpResponse
 from django.views.decorators.csrf import csrf_exempt
@@ -43,17 +45,17 @@ def edit_profile(request):
         propertyName = request.POST.get('propertyName', False)
         newValue = request.POST['newValue'];
         print(propertyName)
-        if(propertyName=="First_name"):
-            if ' ' in newValue or len(newValue) > 8 or len(newValue) < 4:
+        if(propertyName=="first_name"):
+            if ' ' in newValue or len(newValue) > 30 or len(newValue) < 4:
                 return HttpResponse("incorrect")
             else:
-                Users.objects.filter(user_id=request.POST['id']).update(First_name=newValue)
+                Users.objects.filter(user_id=request.POST['id']).update(first_name=newValue)
                 return HttpResponse("done")
-        elif(propertyName=="Last_name"):
-            if ' ' in newValue or len(newValue) > 8 or len(newValue) < 4:
+        elif(propertyName=="last_name"):
+            if ' ' in newValue or len(newValue) > 30 or len(newValue) < 4:
                 return HttpResponse("incorrect")
             else:
-                Users.objects.filter(user_id=request.POST['id']).update(Last_name=newValue)
+                Users.objects.filter(user_id=request.POST['id']).update(last_name=newValue)
                 return HttpResponse("done")
         elif(propertyName == "email"):
             regex = '^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$'

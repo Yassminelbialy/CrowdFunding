@@ -85,7 +85,7 @@
 	          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
 	          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
 	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-	          <li class="nav-item cta cta-colored"><a href="{{data.user_id}}" class="nav-link" ></span>{{data.First_name}}</a></li>
+	          <li class="nav-item cta cta-colored"><a href="{{data.user_id}}" class="nav-link" ></span>{{data.first_name}}</a></li>
 
 	        </ul>
 	      </div>
@@ -111,8 +111,8 @@
 						        <td class="product-name">
 						        	<h3>First Name</h3>
 						        </td>
-						        <td class="price" value="First_name">
-									<h6 >{{data.First_name}}</h6>
+						        <td class="price" value="first_name">
+									<h6 >{{data.first_name}}</h6>
 									
 								</td>
 								<td class="product-remove" id="td"><a href="#" id="firstnameedit">Edit</a></td>
@@ -121,7 +121,7 @@
 						        <td class="product-name">
 						        	<h3>Last Name</h3>
 						        </td>
-						        <td class="price"  value="Last_name"><h6 >{{data.Last_name}}</h6></td>
+						        <td class="price"  value="last_name"><h6 >{{data.last_name}}</h6></td>
 								<td class="product-remove"><a href="#" id="firstnameedit">Edit</a></td>
 							  </tr><!-- END TR-->
 							  
@@ -547,11 +547,11 @@
 				$(event.target).closest('td').prev('td')[0].innerHTML="<input type='url' value='FB_link' required> <br> <div class='error-message'      hidden>Incorrect Account</div>"
 			else if(propertyName=="Birth_day")
 				$(event.target).closest('td').prev('td')[0].innerHTML="<input type='date' value='Birth_day' required> <br> <div class='error-message' hidden>Incorrect Date</div>"
-			else if(propertyName=="First_name")
-				$(event.target).closest('td').prev('td')[0].innerHTML="<input type='text' value='First_name' required> <br> <div class='error-message' hidden>First Name must must be between 4-8 charcters and have no spaces</div>"
+			else if(propertyName=="first_name")
+				$(event.target).closest('td').prev('td')[0].innerHTML="<input type='text' value='first_name' required> <br> <div class='error-message' hidden>First Name must must be between 4-30 charcters and have no spaces</div>"
 				
-			else if(propertyName=="Last_name")
-				$(event.target).closest('td').prev('td')[0].innerHTML="<input type='text' value='Last_name' required> <div class='error-message' hidden>Last Name must must be between 4-8 charcters and have no spaces</div>"
+			else if(propertyName=="last_name")
+				$(event.target).closest('td').prev('td')[0].innerHTML="<input type='text' value='last_name' required> <div class='error-message' hidden>Last Name must must be between 4-30 charcters and have no spaces</div>"
 			else if(propertyName=="country")
 				$(event.target).closest('td').prev('td')[0].innerHTML="<input type='text' value='country' required>"
 
