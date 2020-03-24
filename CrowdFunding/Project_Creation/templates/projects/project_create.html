@@ -1,4 +1,5 @@
-{% extends 'projects/base.html' %} {% block content %}
+{% extends 'profile/index.html'%}
+	{%block content%}
 <form id="post_form" method="post" action="" enctype="multipart/form-data">
 
     {% csrf_token %}
@@ -41,4 +42,4 @@
     <br/> {{ formset.as_p }}
     <input type="submit" name="submit" value="Submit" style="background-color:#008CBA;" />
 </form>
-{%endblock content %}
+{%endblock%}

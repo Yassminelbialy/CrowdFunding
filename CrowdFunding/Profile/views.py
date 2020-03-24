@@ -119,9 +119,9 @@ def remove_account(request):
        id=request.POST['id'] 
        if Users.objects.filter(user_id=id,password=request.POST['password']).count():
            Users.objects.filter(user_id=id,password=request.POST['password']).delete()
-           return HttpResponse("deleted")
+           return redirect(request,"/home")
        else:
-           return HttpResponse("incorrect")
+           redirect(request,"/home")
     
 
 
