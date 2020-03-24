@@ -27,7 +27,7 @@
                 <h5 class="card-title">{{project.title}}</h5>
                 <p class="card-text">{{project.details}}</p>
                   <h5>Rate : {{project.average_rate}} </h5>
-                <a href="#" class="btn btn-success">Donate</a>
+                <a href="{% url 'show_project' project.id %}" class="btn btn-success">Donate</a>
               </div>
             </div>
           </div>
