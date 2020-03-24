@@ -1,5 +1,5 @@
 from django.db import models
-import uuid
+
 # from .validators import validate_even
 # Create your models here.
 class Users(models.Model):
