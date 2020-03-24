@@ -13,7 +13,12 @@
         <input id="numbersOnly" onkeypress='validate()' name="max_target" />
     </div>
     <div class="form-group">
-        <label>Category: </label> {{projectForm.category}}
+        <label>Categories: </label> 
+        <select>
+            {% for category in projectForm.category %}
+                <option value={{ category }}>{{category }}
+            {%endfor%}
+        </select>
     </div>
 
     <div class="form-group">
