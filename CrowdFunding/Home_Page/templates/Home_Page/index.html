@@ -1,3 +1,5 @@
+{% extends 'profile/index.html'%}
+	{%block content%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,7 +36,7 @@
 <body>
 {% load static %}
   <form class="form-inline my-2 my-lg-0" method="get" action="{% url 'Home_Page:search' %}">
-    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="q" value="{{request.GET.q}}">
+    <input class="form-control mr-sm-2 ml-5" type="search" placeholder="Search" aria-label="Search" name="q" value="{{request.GET.q}}">
     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
   </form>
 
@@ -142,5 +144,5 @@
     </div> 
 </body>
 </html>
-
+{%endblock%}
 
