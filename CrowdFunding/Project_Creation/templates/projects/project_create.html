@@ -1,4 +1,5 @@
-{% extends 'projects/base.html' %} {% block content %}
+{% extends 'profile/index.html'%}
+	{%block content%}
 <form id="post_form" method="post" action="" enctype="multipart/form-data">
 
     {% csrf_token %}
@@ -13,7 +14,12 @@
         <input id="numbersOnly" onkeypress='validate()' name="max_target" />
     </div>
     <div class="form-group">
-        <label>Category: </label> {{projectForm.category}}
+        <label>Categories: </label> 
+        <select>
+            {% for category in projectForm.category %}
+                <option value={{ category }}>{{category }}
+            {%endfor%}
+        </select>
     </div>
 
     <div class="form-group">
@@ -36,4 +42,4 @@
     <br/> {{ formset.as_p }}
     <input type="submit" name="submit" value="Submit" style="background-color:#008CBA;" />
 </form>
-{%endblock content %}
+{%endblock%}

@@ -2,7 +2,189 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8595fa-de32-4640-9036-e452b0e88267" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Authentication/migrations/0005_auto_20200324_0936.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Authentication/migrations/0006_auto_20200324_1756.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profile/templates/profile/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/about.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/about_Gki7AUi.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/about_J1i1BWm.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/image_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/projects/about.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/projects/about_82fj6Ex.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Authentication/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Authentication/templates/auth/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/templates/auth/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Authentication/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrowdFunding/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/CrowdFunding/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home_Page/templates/Home_Page/category.html" beforeDir="false" afterPath="$PROJECT_DIR$/Home_Page/templates/Home_Page/category.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home_Page/templates/Home_Page/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Home_Page/templates/Home_Page/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home_Page/templates/Home_Page/result.html" beforeDir="false" afterPath="$PROJECT_DIR$/Home_Page/templates/Home_Page/result.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Profile/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Profile/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Profile/templates/profile/user_profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/Profile/templates/profile/user_profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Profile/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Profile/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project_Creation/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project_Creation/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project_Creation/templates/projects/project_create.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project_Creation/templates/projects/project_create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project_Creation/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project_Creation/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/ajax-loader.gif" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/css/ajax-loader.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/animate.css" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/css/animate.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/aos.css" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/css/aos.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-datepicker.css" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/css/bootstrap-datepicker.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap/bootstrap-grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/css/bootstrap/bootstrap-grid.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap/bootstrap-reboot.css" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/css/bootstrap/bootstrap-reboot.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/css/bootstrap-reboot.css" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/css/css/bootstrap-reboot.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/css/mixins/_text-hide.css" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/css/css/mixins/_text-hide.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/flaticon.css" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/css/flaticon.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/icomoon.css" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/css/icomoon.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/image.css" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/css/image.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/ionicons.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/css/ionicons.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/jquery.timepicker.css" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/css/jquery.timepicker.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/magnific-popup.css" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/css/magnific-popup.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/open-iconic-bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/css/open-iconic-bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/owl.carousel.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/css/owl.carousel.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/owl.theme.default.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/css/owl.theme.default.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/flaticon/backup.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/fonts/flaticon/backup.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/flaticon/font/Flaticon.eot" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/fonts/flaticon/font/Flaticon.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/flaticon/font/Flaticon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/fonts/flaticon/font/Flaticon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/flaticon/font/Flaticon.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/fonts/flaticon/font/Flaticon.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/flaticon/font/Flaticon.woff" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/fonts/flaticon/font/Flaticon.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/flaticon/font/Flaticon.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/fonts/flaticon/font/Flaticon.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/flaticon/font/_flaticon.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/fonts/flaticon/font/_flaticon.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/flaticon/font/flaticon.css" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/fonts/flaticon/font/flaticon.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/flaticon/font/flaticon.html" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/fonts/flaticon/font/flaticon.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/flaticon/license/license.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/fonts/flaticon/license/license.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/icomoon/icomoon.eot" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/fonts/icomoon/icomoon.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/icomoon/icomoon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/fonts/icomoon/icomoon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/icomoon/icomoon.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/fonts/icomoon/icomoon.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/icomoon/icomoon.woff" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/fonts/icomoon/icomoon.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/ionicons/css/_ionicons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/fonts/ionicons/css/_ionicons.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/ionicons/css/ionicons.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/fonts/ionicons/css/ionicons.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/ionicons/fonts/ionicons.eot" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/fonts/ionicons/fonts/ionicons.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/ionicons/fonts/ionicons.svg" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/fonts/ionicons/fonts/ionicons.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/ionicons/fonts/ionicons.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/fonts/ionicons/fonts/ionicons.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/ionicons/fonts/ionicons.woff" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/fonts/ionicons/fonts/ionicons.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/ionicons/fonts/ionicons.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/fonts/ionicons/fonts/ionicons.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/open-iconic/open-iconic.eot" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/fonts/open-iconic/open-iconic.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/open-iconic/open-iconic.otf" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/fonts/open-iconic/open-iconic.otf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/open-iconic/open-iconic.svg" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/fonts/open-iconic/open-iconic.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/open-iconic/open-iconic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/fonts/open-iconic/open-iconic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/open-iconic/open-iconic.woff" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/fonts/open-iconic/open-iconic.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/35439085_2104146376464592_8929447994357448704_n.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/images/35439085_2104146376464592_8929447994357448704_n.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/35687109_617169181990618_946119868686532608_n.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/images/35687109_617169181990618_946119868686532608_n.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/36509807_2067147670269058_7005995123326582784_n.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/images/36509807_2067147670269058_7005995123326582784_n.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/about_Gki7AUi_VeQj8UD.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/images/about_Gki7AUi_VeQj8UD.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/image_1_HEQflyA.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/images/image_1_HEQflyA.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/partner-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/images/partner-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/partner-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/images/partner-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/partner-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/images/partner-3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/partner-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/images/partner-4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/partner-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/images/partner-5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/aos.js" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/js/aos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/bootstrap-datepicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/js/bootstrap-datepicker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/google-map.js" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/js/google-map.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/jquery-3.2.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/js/jquery-3.2.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/jquery-migrate-3.0.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/js/jquery-migrate-3.0.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/jquery.animateNumber.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/js/jquery.animateNumber.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/jquery.easing.1.3.js" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/js/jquery.easing.1.3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/jquery.magnific-popup.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/js/jquery.magnific-popup.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/js/jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/jquery.stellar.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/js/jquery.stellar.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/jquery.waypoints.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/js/jquery.waypoints.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/owl.carousel.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/js/owl.carousel.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/popper.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/js/popper.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/js/profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/range.js" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/js/range.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/scrollax.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/js/scrollax.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/_alert.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/_alert.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/_badge.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/_badge.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/_breadcrumb.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/_breadcrumb.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/_button-group.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/_button-group.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/_buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/_buttons.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/_card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/_card.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/_carousel.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/_carousel.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/_close.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/_close.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/_code.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/_code.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/_custom-forms.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/_custom-forms.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/_dropdown.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/_dropdown.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/_forms.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/_forms.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/_functions.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/_functions.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/_grid.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/_grid.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/_images.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/_images.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/_input-group.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/_input-group.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/_jumbotron.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/_jumbotron.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/_list-group.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/_list-group.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/_media.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/_media.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/_mixins.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/_modal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/_modal.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/_nav.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/_nav.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/_navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/_navbar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/_pagination.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/_pagination.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/_popover.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/_popover.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/_print.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/_print.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/_progress.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/_progress.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/_reboot.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/_reboot.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/_root.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/_root.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/_spinners.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/_spinners.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/_tables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/_tables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/_toasts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/_toasts.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/_tooltip.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/_tooltip.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/_transitions.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/_transitions.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/_type.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/_type.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/_utilities.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/_utilities.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/bootstrap-grid.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/bootstrap-grid.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/bootstrap-reboot.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/bootstrap-reboot.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/bootstrap.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/bootstrap.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/mixins/_alert.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/mixins/_alert.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/mixins/_background-variant.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/mixins/_background-variant.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/mixins/_badge.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/mixins/_badge.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/mixins/_border-radius.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/mixins/_border-radius.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/mixins/_box-shadow.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/mixins/_box-shadow.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/mixins/_breakpoints.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/mixins/_breakpoints.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/mixins/_buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/mixins/_buttons.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/mixins/_caret.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/mixins/_caret.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/mixins/_clearfix.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/mixins/_clearfix.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/mixins/_float.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/mixins/_float.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/mixins/_forms.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/mixins/_forms.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/mixins/_gradients.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/mixins/_gradients.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/mixins/_grid-framework.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/mixins/_grid-framework.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/mixins/_grid.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/mixins/_grid.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/mixins/_hover.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/mixins/_hover.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/mixins/_image.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/mixins/_image.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/mixins/_list-group.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/mixins/_list-group.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/mixins/_lists.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/mixins/_lists.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/mixins/_nav-divider.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/mixins/_nav-divider.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/mixins/_pagination.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/mixins/_pagination.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/mixins/_reset-text.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/mixins/_reset-text.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/mixins/_resize.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/mixins/_resize.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/mixins/_screen-reader.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/mixins/_screen-reader.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/mixins/_size.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/mixins/_size.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/mixins/_table-row.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/mixins/_table-row.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/mixins/_text-emphasis.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/mixins/_text-emphasis.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/mixins/_text-hide.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/mixins/_text-hide.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/mixins/_text-truncate.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/mixins/_text-truncate.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/mixins/_transition.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/mixins/_transition.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/mixins/_visibility.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/mixins/_visibility.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/utilities/_align.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/utilities/_align.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/utilities/_background.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/utilities/_background.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/utilities/_borders.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/utilities/_borders.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/utilities/_clearfix.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/utilities/_clearfix.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/utilities/_display.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/utilities/_display.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/utilities/_embed.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/utilities/_embed.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/utilities/_flex.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/utilities/_flex.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/utilities/_float.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/utilities/_float.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/utilities/_overflow.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/utilities/_overflow.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/utilities/_position.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/utilities/_position.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/utilities/_screenreaders.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/utilities/_screenreaders.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/utilities/_shadows.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/utilities/_shadows.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/utilities/_sizing.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/utilities/_sizing.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/utilities/_spacing.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/utilities/_spacing.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/utilities/_text.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/utilities/_text.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/bootstrap/utilities/_visibility.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/bootstrap/utilities/_visibility.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/static/scss/style.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,26 +197,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Home_Page/templates/Home_Page/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-              <folding>
-                <element signature="n#style#0;n#html#0;n#!!top" />
-                <element signature="n#style#0;n#h2#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h2#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h2#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="1280">
+              <caret line="137" column="60" selection-start-line="137" selection-start-column="60" selection-end-line="137" selection-end-column="60" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Authentication/models.py">
+        <entry file="file://$PROJECT_DIR$/Home_Page/templates/Home_Page/category.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+            <state relative-caret-position="575">
+              <caret line="29" column="60" selection-start-line="29" selection-start-column="60" selection-end-line="29" selection-end-column="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Home_Page/templates/Home_Page/result.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="21" column="16" lean-forward="true" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -42,18 +224,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CrowdFunding/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="650">
-              <caret line="26" column="40" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
+            <state relative-caret-position="264">
+              <caret line="31" column="77" selection-start-line="31" selection-start-column="65" selection-end-line="31" selection-end-column="77" />
               <folding>
                 <element signature="e#636#668#0" expanded="true" />
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Authentication/templates/profile.html">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -71,7 +248,7 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Authentication/templates/auth/base.html">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
@@ -124,13 +301,14 @@
         <option value="$PROJECT_DIR$/CrowdFunding/settings.py" />
         <option value="$PROJECT_DIR$/Project_Creation/migrations/0008_projects_created.py" />
         <option value="$PROJECT_DIR$/Home_Page/templates/Home_Page/index.html" />
+        <option value="$PROJECT_DIR$/Home_Page/templates/Home_Page/category.html" />
+        <option value="$PROJECT_DIR$/Home_Page/templates/Home_Page/result.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="699" />
+    <option name="width" value="1381" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -139,6 +317,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -149,26 +328,25 @@
             <path>
               <item name="CrowdFunding" type="b2602c69:ProjectViewProjectNode" />
               <item name="CrowdFunding" type="462c0819:PsiDirectoryNode" />
-              <item name="Authentication" type="462c0819:PsiDirectoryNode" />
+              <item name="Home_Page" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CrowdFunding" type="b2602c69:ProjectViewProjectNode" />
               <item name="CrowdFunding" type="462c0819:PsiDirectoryNode" />
-              <item name="Authentication" type="462c0819:PsiDirectoryNode" />
+              <item name="Home_Page" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CrowdFunding" type="b2602c69:ProjectViewProjectNode" />
               <item name="CrowdFunding" type="462c0819:PsiDirectoryNode" />
-              <item name="Authentication" type="462c0819:PsiDirectoryNode" />
+              <item name="Home_Page" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="auth" type="462c0819:PsiDirectoryNode" />
+              <item name="Home_Page" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -205,7 +383,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24289985" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24289985" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -216,7 +394,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.2883959" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.13481228" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.061443932" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -362,28 +540,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Home_Page/templates/Home_Page/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-          <folding>
-            <element signature="n#style#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#h2#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h2#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h2#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Authentication/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+          <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Authentication/templates/profile.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Authentication/templates/auth/activate.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Authentication/templates/auth/activate_failed.html">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Home_Page/views.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -404,30 +575,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Authentication/templates/auth/base.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/CrowdFunding/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="26" column="40" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
+        <state relative-caret-position="264">
+          <caret line="31" column="77" selection-start-line="31" selection-start-column="65" selection-end-line="31" selection-end-column="77" />
           <folding>
             <element signature="e#636#668#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Authentication/templates/profile.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Authentication/templates/home.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Authentication/templates/auth/activate.html">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/Home_Page/templates/Home_Page/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1280">
+          <caret line="137" column="60" selection-start-line="137" selection-start-column="60" selection-end-line="137" selection-end-column="60" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Authentication/templates/auth/activate_failed.html">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/Home_Page/templates/Home_Page/category.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="29" column="60" selection-start-line="29" selection-start-column="60" selection-end-line="29" selection-end-column="60" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Authentication/templates/auth/base.html">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/Home_Page/templates/Home_Page/result.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="21" column="16" lean-forward="true" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

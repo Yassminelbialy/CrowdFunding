@@ -1,4 +1,8 @@
+{% extends 'profile/index.html'%}
+	{%block content%}
+
 {% load static %}
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -7,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
 
     <title>Hello, world!</title>
   </head>
@@ -23,7 +27,7 @@
                 <h5 class="card-title">{{project.title}}</h5>
                 <p class="card-text">{{project.details}}</p>
                   <h5>Rate : {{project.average_rate}} </h5>
-                <a href="#" class="btn btn-success">Donate</a>
+                <a href="{% url 'show_project' project.id %}" class="btn btn-success">Donate</a>
               </div>
             </div>
           </div>
@@ -38,3 +42,4 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
+{%endblock%}

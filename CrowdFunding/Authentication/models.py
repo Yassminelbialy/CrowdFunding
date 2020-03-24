@@ -1,4 +1,5 @@
 from django.db import models
+
 # from .validators import validate_even
 # Create your models here.
 class Users(models.Model):

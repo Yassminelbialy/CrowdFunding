@@ -6,7 +6,7 @@ from django.forms.models import modelformset_factory
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 
-from Project_Creation.models import Images, Projects
+from Project_Creation.models import Images, Projects, Category
 from Project_Creation.forms import ProjectForm, ImageForm
 from Make_Donation.models import Donation
 from Home_Page.models import Comments
@@ -19,12 +19,16 @@ from django import forms
 
 #@login_required
 def create_project(request):
+    categories = Category.objects.all().values_list("name",flat=True) 
     ImageFormSet = modelformset_factory(Images, form = ImageForm, extra = 4)
     if request.method == 'POST':
         form = ProjectForm(request.POST)
         formset = ImageFormSet(request.POST, request.FILES, queryset = Images.objects.none())
         if form.is_valid() and formset.is_valid():
             project = form.save(commit = False)
+            if request.category in categories:
+                project.category_id =  Category.objects.get(name=request.category).id
+
             project.user = request.user
             project.save()
             for form in formset.cleaned_data:
@@ -44,7 +48,7 @@ def create_project(request):
         formset = ImageFormSet(queryset=Images.objects.none())
     return render (
                     request, 'projects/project_create.html',
-                    {'projectForm': form, 'formset': formset}
+                    {'projectForm': form, 'formset': formset, "categories":categories}
                 )
     
     

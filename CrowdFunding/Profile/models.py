@@ -1,6 +1,7 @@
 from django.db import models
 from Authentication.models import Users
-from Project_Creation.models import Projects
+
+
 
 # Create your models here.
 
