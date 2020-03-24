@@ -56,13 +56,12 @@ def create_project(request):
 def show_project(request, id): 
     project = get_object_or_404(Projects, id = id)
     project_tags = project.tags.names()
-    #project_images=project.image_set.all()
-    
+    project_images = project.images_set.all()
 
     context = {
         "project":project, 
-        #"project_images":project_images, 
-        "project_tags": project_tags
+        "project_tags": project_tags, 
+        "project_images":project_images
     }
     return render(request, 'projects/project_show.html' , context)
       
