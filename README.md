@@ -16,12 +16,12 @@ Crowdfunding is a form of crowd sourcing and alternative finance using Django
 </pre>
 <h2>Run the project</h2>
 <pre>
-•	download the project
+•	clone the project
 • open shell and run the following command
-• source myvir/Scripts/activate
-• pip install django
-• pip install django-taggit
-• python -m pip install Pillow
+• cd CrowdFunding/CrowdFunding/
+• python3 -m venv venv
+• source venv/bin/activate 
+• pip install -r requirements.txt
 • python manage.py migrate
 • python manage.py runserver
 the admin is "iti" password "iti"
