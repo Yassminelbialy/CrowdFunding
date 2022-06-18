@@ -1,3 +1,5 @@
 /myvir/*
 /CrowFunding/static/*/
+*/.vscode/*
+*/.idea/*
 
