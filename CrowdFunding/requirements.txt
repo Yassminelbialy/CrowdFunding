@@ -1,0 +1,2 @@
+django_taggit==3.0.0
+Pillow==9.1.1
